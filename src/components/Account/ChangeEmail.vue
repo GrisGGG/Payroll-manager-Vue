@@ -4,7 +4,7 @@
             <div class="field">
                 <input 
                 type="text" 
-                placeholder="Nuevo email" 
+                placeholder="New email" 
                 v-model="formData.email"
                 :class="{ error: formError.email}"
                 >
@@ -13,7 +13,7 @@
                 <div class="field">
                 <input 
                 type="password" 
-                placeholder="Contraseña actual" 
+                placeholder="Current Password" 
                 v-model="formData.password"
                 :class="{ error: formError.password}"
                 >
@@ -24,7 +24,7 @@
         type="submit" 
         class="ui button primary"
         :class="{ loading: loading}"
-        >Actualizar</button>
+        >Update</button>
         </div>
     </form>
 </template>

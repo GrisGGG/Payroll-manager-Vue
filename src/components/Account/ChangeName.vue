@@ -2,7 +2,7 @@
     <form class="ui form change-name" @submit.prevent="onChangeName">
         <input 
         type="text" 
-        placeholder="Nombre y apellido" 
+        placeholder="Full name" 
         v-model="name"
         :class="{ error: formError}"
         >
@@ -10,7 +10,7 @@
         type="submit" 
         class="ui button primary"
         :class="{ loading: loading}"
-        >Actualizar</button>
+        >Update</button>
     </form>
 </template>
 

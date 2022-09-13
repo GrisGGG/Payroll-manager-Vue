@@ -2,14 +2,14 @@
   <div class="ui secondary menu">
     <div class="ui container">
       <div class="menu left">
-        <router-link class="item" to="/">Nominas</router-link>
+        <router-link class="item" to="/">Payrolls</router-link>
       </div>
       <router-link class="menu center" to="/">
         <img class="ui small image" src="../assets/nomina.png" alt="">
       </router-link>
       <div class="menu right">
         <router-link class="item" to="/account">
-          Hola, {{ user.displayName || user.email }}
+          Hey, {{ user.displayName || user.email }}!
         </router-link>
         <span class="ui item logout" @click="logout">
           <i class="fa-solid fa-arrow-right-from-bracket"></i>

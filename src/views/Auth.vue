@@ -30,8 +30,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-$color-bg-main: #14453D;
-$color-bg-second: #3CBBB1 ;
+$color-bg-main: rgba(77,60,173,1) ;
+$color-bg-second:rgba(60,203,132,1)  ;
 .auth {
     height: 100vh;
     display: flex;
@@ -39,6 +39,6 @@ $color-bg-second: #3CBBB1 ;
     align-items: center;
     justify-content: center;
     background: $color-bg-main;
-    background: linear-gradient(0deg,$color-bg-main 0%, $color-bg-second 100%);
+    background: linear-gradient(194deg,$color-bg-main 0%, $color-bg-second 100%);
 }
 </style>

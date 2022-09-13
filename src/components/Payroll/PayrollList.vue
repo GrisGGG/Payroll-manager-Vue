@@ -1,7 +1,7 @@
 <template>
   <div class="payroll-list">
       <p class="payroll-list__not-found" v-if="payrolls?.lenght === 0">
-        No tienes ninguna nomina, sube la primera</p>
+        You don´t have any payroll yet, upload the first file!</p>
   </div>
   <div 
     class="payroll-list__payroll"
@@ -9,8 +9,8 @@
     :key="payroll.id">
   <p>{{ formDate(payroll.dateString) }}</p>
   <div class="action">
-    <a :href="payroll.urlFile" target="_blank" class="ui button positive" id="download">Descargar</a>
-    <button class="ui button red" @click="deletePaylloads(payroll.id)" >Eliminar</button>
+    <a :href="payroll.urlFile" target="_blank" class="ui button positive" id="download">Download</a>
+    <button class="ui button red" @click="deletePaylloads(payroll.id)" >Delete</button>
   </div>
   </div>
 </template>

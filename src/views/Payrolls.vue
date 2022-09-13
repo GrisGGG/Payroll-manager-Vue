@@ -1,7 +1,7 @@
 <template>
   <BasicLayout>
     <div class="payrolls">
-      <h1>Mis nominas</h1>
+      <h1>My payrolls</h1>
       <UploadPayroll :getPayrolls="getPayrolls" />
       <PayrollList :payrolls="payrolls" :getPayrolls="getPayrolls"></PayrollList>
     </div>

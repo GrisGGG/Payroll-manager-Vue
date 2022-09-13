@@ -1,11 +1,11 @@
 <template>
     <div class="login">
-        <h1>Iniciar Sesión</h1>
+        <h1>Log In</h1>
         <form class="ui form" @submit.prevent="onLogin">
             <div class="field">
                 <input 
                 type="text" 
-                placeholder="Correo Electronico" 
+                placeholder="Email" 
                 v-model="formData.email"
                 :class="{error: formError.email}"
                 >
@@ -13,14 +13,14 @@
             <div class="field">
                 <input 
                 type="password" 
-                placeholder="Contraseña" 
+                placeholder="Password" 
                 v-model="formData.password"
                  :class="{error: formError.password}"
                 >
             </div>
-            <button type="submit" class="ui button positive fluid" :class="{loading}">Entrar</button>
+            <button type="submit" class="ui button positive fluid" :class="{loading}">Sign in</button>
         </form>
-        <p @click="changeForm">Crear una nueva cuenta</p>
+        <p @click="changeForm">Create an account</p>
     </div>
 </template>
 

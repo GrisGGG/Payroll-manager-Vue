@@ -5,14 +5,14 @@
         <div class="field">
             <input 
             type="text"
-            placeholder="Correo Electronico"
+            placeholder="Email"
             v-model="formData.email"
             :class="{error : formError.email}"
             >
         </div>
         <div class="field">
             <input type="password" 
-            placeholder="Contraseña"
+            placeholder="Password"
             v-model="formData.password"
             :class="{error : formError.password}"
             >
@@ -20,7 +20,7 @@
          <div class="field">
             <input 
             type="password" 
-            placeholder="Contraseña"
+            placeholder="Password"
             v-model="formData.repeatPassword"
             :class="{error : formError.repeatPassword}"
             >
@@ -29,8 +29,8 @@
         type="changeForm" 
         class="ui button positive fluid"
         :class="{ loading }"
-        >Registrar</button>
-        <p @click="changeForm">Iniciar Sesión</p>
+        >Sign up</button>
+        <p @click="changeForm">Sign in</p>
     </form>
 
   </div>

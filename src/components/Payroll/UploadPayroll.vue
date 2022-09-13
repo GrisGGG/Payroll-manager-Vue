@@ -3,13 +3,13 @@
         <button 
         class="ui button primary"
         @click="showCloseForm"
-        >Nueva nomina</button>
+        >New payroll</button>
 
         <form class="ui form upload-payroll__form" :class=" { open: showForm }" @submit.prevent="handleSubmit">
             <div class="field">
                 <label for="file" class="ui icon button">
                     <i class="fa-solid fa-file-lines"></i>
-                    Seleccionar nomina
+                    Select payroll
                 </label>
                 <input 
                 type="file" 
@@ -25,7 +25,7 @@
                     </div>
                 </div>
             </div>
-            <button class="ui button positive" :class="{ loading }">Subir nomina</button>
+            <button class="ui button positive" :class="{ loading }">Upload payroll</button>
         </form>
 
   </div>

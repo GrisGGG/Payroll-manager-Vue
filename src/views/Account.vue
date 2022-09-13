@@ -1,15 +1,15 @@
 <template>
     <div class="account">
         <BasicLayout>
-            <h2>Bienvenido a ajustes</h2>
+            <h2>Settings</h2>
                 <div class="account__section">  
-                    <p class="title">Cambiar el nombre: 
+                    <p class="title">Change name: 
                     <span v-if="user.displayName">{{ user.displayName }}</span>
                     </p>
                     <ChangeName></ChangeName>    
                 </div>
                 <div class="account__section">  
-                    <p class="title">Cambiar el email: 
+                    <p class="title">Change email: 
                     <span v-if="user.email">{{ user.email }}</span>
                     </p>
                     <ChangeEmail></ChangeEmail>  

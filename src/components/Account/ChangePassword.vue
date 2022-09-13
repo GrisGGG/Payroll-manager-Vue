@@ -12,7 +12,7 @@
       <div class="field">
         <input
           type="password"
-          placeholder="Nueva contraseña"
+          placeholder="New Password"
           v-model="formData.newPassword"
           :class="{ error: formError.newPassword }"
         />
@@ -20,7 +20,7 @@
       <div class="field">
         <input
           type="password"
-          placeholder="Repite la nueva contraseña"
+          placeholder="Confirm Password"
           v-model="formData.newPasswordRepeat"
           :class="{ error: formError.newPasswordRepeat }"
         />
